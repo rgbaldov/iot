@@ -12,8 +12,8 @@
 ## Core Technologies
 - **ESP32** → Microcontroller for sensors/actuators
 - **LoRa** → Long-range, low-power communication
-  - **Node-RED** → Visual programming for IoT workflows
-  - **MQTT** → Lightweight messaging protocol
+- **Node-RED** → Visual programming for IoT workflows
+- **MQTT** → Lightweight messaging protocol
 
 ## Why It Matters
 - 🌍 Smarter cities
