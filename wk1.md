@@ -1,44 +1,38 @@
 # 📘 Product Interconnectivity - Introduction
 
-## Slide 1
-- **Introduction to Product Interconnectivity**
+## Introduction to Product Interconnectivity
 - ESP32 | LoRa | Node-RED | MQTT
 - Building bridges between devices
 
-## Slide 2
-- **What is Product Interconnectivity?**
-  - The seamless communication and integration of devices, platforms, and applications.
-  - Foundation of IoT and smart systems.
-  - Enables data-driven decision making.
+## What is Product Interconnectivity?
+- The seamless communication and integration of devices, platforms, and applications.
+- Foundation of IoT and smart systems.
+- Enables data-driven decision making.
 
-## Slide 3
-- **Core Technologies**
-  - **ESP32** → Microcontroller for sensors/actuators
-  - **LoRa** → Long-range, low-power communication
+## Core Technologies
+- **ESP32** → Microcontroller for sensors/actuators
+- **LoRa** → Long-range, low-power communication
   - **Node-RED** → Visual programming for IoT workflows
   - **MQTT** → Lightweight messaging protocol
 
-## Slide 4
-- **Why It Matters**
-  - 🌍 Smarter cities
-  - 🏠 Smarter homes
-  - 🌱 Efficient agriculture
-  - ⚙️ Industry 4.0
-  - 🌡️ Better environmental monitoring
+## Why It Matters
+- 🌍 Smarter cities
+- 🏠 Smarter homes
+- 🌱 Efficient agriculture
+- ⚙️ Industry 4.0
+- 🌡️ Better environmental monitoring
 
-## Slide 5
-- **Interconnectivity Flow**
-  1. ESP32 (collects data)
-  2. Sends via LoRa
-  3. Gateway → MQTT broker
-  4. Node-RED dashboard (visualization/control)
+## Interconnectivity Flow
+1. ESP32 (collects data)
+2. Sends via LoRa
+3. Gateway → MQTT broker
+4. Node-RED dashboard (visualization/control)
 
-## Slide 6
-- **Course Snapshot**
-  - Hands-on with ESP32
-  - LoRa communication
-  - Building Node-RED dashboards
-  - Integrating with real-world applications
+## Course Snapshot
+- Hands-on with ESP32
+- LoRa communication
+- Building Node-RED dashboards
+- Integrating with real-world applications
 
 ---
 
@@ -48,7 +42,7 @@
 Students will visualize and design a simple IoT product interconnectivity system using **ESP32, LoRa, and Node-RED**, identifying the flow of data and the role of each component.
 
 ### 📝 Instructions  
-1. Form small groups (3–5 members).  
+1. Form small groups (3–4 members).  
 2. Choose a real-world problem (e.g., smart agriculture, smart home, environmental monitoring).  
 3. Sketch an IoT system (using paper, sticky notes, or digital tools) that solves the problem:  
    - Identify sensors/actuators (ESP32 nodes).  
