@@ -1,4 +1,4 @@
-# Activity 6: ESP32 Temperature & Humidity Monitor (Serial Monitor)
+# Activity 5: ESP32 Temperature & Humidity Monitor (Serial Monitor)
 
 **Prepared by:**  
 
