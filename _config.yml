@@ -1,4 +1,4 @@
 title: "Product Interconnectivity"
-description: "This course introduces the fundamentals of product interconnectivity with hands-on projects using ESP32 microcontrollers, LoRa communication, and Node-RED for flow-based IoT applications."
-theme: jekyll-theme-minimalist
+description: "This course introduces the fundamentals of product interconnectivity with hands-on projects using ESP32, LoRa, and Node-RED for flow-based IoT applications."
+theme: jekyll-theme-minimal
 markdown: kramdown
