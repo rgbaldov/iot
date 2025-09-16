@@ -1,4 +1,4 @@
-# Activity 7: ESP32 Web-based Temperature & Humidity Monitor
+# Activity 6: ESP32 Web-based Temperature & Humidity Monitor
 
 **Prepared by:**  
 
