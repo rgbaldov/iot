@@ -1,4 +1,4 @@
-# Activity 7: ESP32 Web-based Temperature & Humidity Monitor
+# Activity 7: ESP32 + DHT11 Sensor Simulation (Wokwi)
 
 **Prepared by:**  
 
@@ -24,8 +24,8 @@ To use an **ESP32** with a **DHT11** in the [Wokwi Simulator](https://wokwi.com/
 2. Add a **DHT11 sensor** from the parts library.  
 3. Connect the pins as shown in the wiring diagram.  
 4. Open the **Library Manager** → search and install:  
-   - `DHT sensor library by Adafruit`  
-   - `Adafruit Unified Sensor`  
+   - DHT sensor library by Adafruit  
+   - Adafruit Unified Sensor  
 5. Copy and paste the code below into the Arduino editor.  
 6. Click **Start Simulation** ▶️.  
 7. Open the **Serial Monitor** to see temperature and humidity readings
