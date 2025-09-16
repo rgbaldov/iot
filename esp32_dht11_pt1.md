@@ -5,24 +5,21 @@
 [Renann G. Baldovino, PhD](https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/manufacturing-engineering-management/faculty-profile/renann-baldovino/)  
 **[Department of Manufacturing Engineering and Management, De La Salle University (DLSU)](https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/manufacturing-engineering-management/)**  
 
-- Contains two activities for using an **ESP32** with a **DHT11 sensor** to measure temperature and humidity.  
----
-
-### Objective:  
+## Objective:  
 To interface a **DHT11 sensor** with an **ESP32** and display real-time temperature and humidity readings on the Arduino Serial Monitor.  
 
-### Materials: 
+## Materials: 
 - ESP32 development board  
 - DHT11 sensor  
 - Breadboard & jumper wires  
 - Arduino IDE  
 
-### Wiring (ESP32 + DHT11):  
+## Wiring (ESP32 + DHT11):  
 - DHT11 VCC → **3.3V (ESP32)**  
 - DHT11 GND → **GND (ESP32)**  
 - DHT11 DATA → **GPIO 4 (ESP32)**  
 
-### Arduino Code:
+## Arduino Code:
 Install libraries:  
 - **DHT sensor library by Adafruit**  
 - **Adafruit Unified Sensor**  
