@@ -1,4 +1,4 @@
-# Activity 7: ESP32 + DHT11 Sensor Simulation (Wokwi)
+# Activity 7: ESP32 + DHT22 Sensor Simulation (Wokwi)
 
 **Prepared by:**  
 
@@ -6,22 +6,22 @@
 **[Department of Manufacturing Engineering and Management, De La Salle University (DLSU)](https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/manufacturing-engineering-management/)**  
 
 ## Objective:  
-To use an **ESP32** with a **DHT11** in the [Wokwi Simulator](https://wokwi.com/) to read **temperature** and **humidity** data from the sensor and display it on the **serial monitor**  
+To use an **ESP32** with a **DHT22** in the [Wokwi Simulator](https://wokwi.com/) to read **temperature** and **humidity** data from the sensor and display it on the **serial monitor**  
 
 ## Materials:  
 - ESP32  
-- DHT11 sensor  
+- DHT22 sensor  
 - Jumper wires  
 - Wokwi Online Simulator  
 
-## Wiring (ESP32 + DHT11):  
-- DHT11 VCC → **3.3V (ESP32)**  
-- DHT11 GND → **GND (ESP32)**  
-- DHT11 DATA → **GPIO 4 (ESP32)**  
+## Wiring (ESP32 + DHT22):  
+- DHT22 VCC → **3.3V (ESP32)**  
+- DHT22 GND → **GND (ESP32)**  
+- DHT22 DATA → **GPIO 4 (ESP32)**  
 
 ## Steps:
 1. Go to [Wokwi](https://wokwi.com) → **Start New Project** → select **ESP32**.  
-2. Add a **DHT11 sensor** from the parts library.  
+2. Add a **DHT22 sensor** from the parts library.  
 3. Connect the pins as shown in the wiring diagram.  
 4. Open the **Library Manager** → search and install:  
    - DHT sensor library by Adafruit  
