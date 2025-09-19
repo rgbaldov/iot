@@ -1,0 +1,70 @@
+[
+    {
+        "id": "1a2b3c4d5e6f7g8h",
+        "type": "inject",
+        "z": "flow1",
+        "name": "Send Test Message",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "payload": "Hello from Node-RED!",
+        "payloadType": "str",
+        "x": 150,
+        "y": 120,
+        "wires": [["mqtt-pub"]]
+    },
+    {
+        "id": "mqtt-pub",
+        "type": "mqtt out",
+        "z": "flow1",
+        "name": "MQTT Publisher",
+        "topic": "test/topic",
+        "qos": "0",
+        "retain": "false",
+        "broker": "mqtt-broker",
+        "x": 400,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "mqtt-sub",
+        "type": "mqtt in",
+        "z": "flow1",
+        "name": "MQTT Subscriber",
+        "topic": "test/topic",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "mqtt-broker",
+        "x": 180,
+        "y": 200,
+        "wires": [["debug1"]]
+    },
+    {
+        "id": "debug1",
+        "type": "debug",
+        "z": "flow1",
+        "name": "Show Message",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 400,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "mqtt-broker",
+        "type": "mqtt-broker",
+        "name": "Local Mosquitto",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "keepalive": "60",
+        "cleansession": true
+    }
+]
