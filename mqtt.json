@@ -1,70 +1,77 @@
-[
-    {
-        "id": "1a2b3c4d5e6f7g8h",
-        "type": "inject",
-        "z": "flow1",
-        "name": "Send Test Message",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "payload": "Hello from Node-RED!",
-        "payloadType": "str",
-        "x": 150,
-        "y": 120,
-        "wires": [["mqtt-pub"]]
-    },
-    {
-        "id": "mqtt-pub",
-        "type": "mqtt out",
-        "z": "flow1",
-        "name": "MQTT Publisher",
-        "topic": "test/topic",
-        "qos": "0",
-        "retain": "false",
-        "broker": "mqtt-broker",
-        "x": 400,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "mqtt-sub",
-        "type": "mqtt in",
-        "z": "flow1",
-        "name": "MQTT Subscriber",
-        "topic": "test/topic",
-        "qos": "0",
-        "datatype": "auto",
-        "broker": "mqtt-broker",
-        "x": 180,
-        "y": 200,
-        "wires": [["debug1"]]
-    },
-    {
-        "id": "debug1",
-        "type": "debug",
-        "z": "flow1",
-        "name": "Show Message",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "x": 400,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "mqtt-broker",
-        "type": "mqtt-broker",
-        "name": "Local Mosquitto",
-        "broker": "localhost",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "keepalive": "60",
-        "cleansession": true
-    }
-]
+[{
+    "id": "inject1",
+    "type": "inject",
+    "z": "flow1",
+    "name": "Send Message",
+    "props":[{"p":"payload"}],
+    "payload":"Hello IoT World",
+    "payloadType":"str",
+    "repeat":"",
+    "crontab":"",
+    "once":false,
+    "x":150,
+    "y":100,
+    "wires":[["mqtt_out1"]]
+},
+{
+    "id": "mqtt_out1",
+    "type": "mqtt out",
+    "z": "flow1",
+    "name":"Publisher",
+    "topic":"iot/classroom/demo",
+    "qos":"0",
+    "retain":"false",
+    "broker":"mqtt_broker",
+    "x":350,
+    "y":100,
+    "wires":[]
+},
+{
+    "id": "mqtt_in1",
+    "type": "mqtt in",
+    "z": "flow1",
+    "name":"Subscriber",
+    "topic":"iot/classroom/demo",
+    "qos":"0",
+    "datatype":"auto",
+    "broker":"mqtt_broker",
+    "x":150,
+    "y":200,
+    "wires":[["debug1"]]
+},
+{
+    "id": "debug1",
+    "type": "debug",
+    "z": "flow1",
+    "name":"Received Message",
+    "active":true,
+    "tosidebar":true,
+    "console":false,
+    "tostatus":false,
+    "complete":"payload",
+    "targetType":"msg",
+    "x":350,
+    "y":200,
+    "wires":[]
+},
+{
+    "id": "mqtt_broker",
+    "type": "mqtt-broker",
+    "name":"HiveMQ Broker",
+    "broker":"broker.hivemq.com",
+    "port":"1883",
+    "clientid":"",
+    "usetls":false,
+    "protocolVersion":"4",
+    "keepalive":"60",
+    "cleansession":true,
+    "birthTopic":"",
+    "birthQos":"0",
+    "birthPayload":"",
+    "closeTopic":"",
+    "closeQos":"0",
+    "closePayload":"",
+    "willTopic":"",
+    "willQos":"0",
+    "willPayload":""
+}]
