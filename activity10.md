@@ -23,7 +23,13 @@
 
 ### 1. Flash MicroPython Firmware  
 1. Download ESP32 MicroPython `.bin` firmware.  
-2. Use **esptool.py** (or Thonny’s built-in flasher):  
-   ```bash
-   esptool.py --chip esp32 --port COMx erase_flash
-   esptool.py --chip esp32 --port COMx write_flash -z 0x1000 esp32-x.x.x.bin
+2. Use **esptool.py** (or Thonny’s built-in flasher)
+
+### 2. Blink Onboard LED  
+
+### 3. Traffic Light System  
+1. Same from Activity 3.
+
+## Required Screenshot Outputs
+1. Python codes
+2. Hardware Setup
