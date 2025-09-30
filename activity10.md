@@ -16,8 +16,6 @@
 - USB cable  
 - Computer with **Thonny IDE** (or uPyCraft) installed  
 - MicroPython firmware for ESP32 (latest version from [micropython.org](https://micropython.org/download/esp32/))  
-- (Optional) DHT11 sensor + 10k resistor  
-- (Optional) Push button + breadboard  
 
 ## Steps  
 
