@@ -26,35 +26,35 @@
 - DHT11 **Data → GPIO 15**
 
 ### 1. Setup HiveMQ Cloud
-1. 1. Go to [HiveMQ Cloud](https://www.hivemq.com/mqtt-cloud-broker/).
-2. Create a free account and new cluster.
-3. Note down:
+- Go to [HiveMQ Cloud](https://www.hivemq.com/mqtt-cloud-broker/).
+- Create a free account and new cluster.
+- Note down:
    - Broker URL (e.g., `broker.hivemq.com`)
    - Port: `1883`
    - Username & Password (if configured)
   
 ### 2. Flash ESP32 with MicroPython
-1. You can use Thonny IDE in your PC or RPi.
-2. Download the latest ESP32 MicroPython firmware.
+-You can use Thonny IDE in your PC or RPi.
+- Download the latest ESP32 MicroPython firmware.
 
 ### 3. [ESP32 Micropython Code](https://raw.githubusercontent.com/rgbaldov/iot/refs/heads/main/code12-1.py)
-1. Add gauge widgets for temperature and humidity
-2. Send an alert notification if temperature > 30°C
+- Add gauge widgets for temperature and humidity
+- Send an alert notification if temperature > 30°C
 
 ### 4. Setup Node-RED Dashboard
-1. Open Node-RED editor → http://localhost:1880
-2. Install node-red-dashboard from Palette Manager.
-3. Drag the following nodes:
+- Open Node-RED editor → http://localhost:1880
+- Install node-red-dashboard from Palette Manager.
+- Drag the following nodes:
   - 2 Dashboard Buttons
   - MQTT Out
-4. Configure MQTT Out:
+- Configure MQTT Out:
   - Server: broker.hivemq.com
   - Port: 1883
   - Topic: esp32/remote
-5. Button Setup:
+- Button Setup:
   - Button 1 → Payload: "ON"
   - Button 2 → Payload: "OFF"
-6. Connect buttons → MQTT Out → Deploy.
+- Connect buttons → MQTT Out → Deploy.
 
 ## Test Procedure
 1. Open Node-RED Dashboard → http://localhost:1880/ui
