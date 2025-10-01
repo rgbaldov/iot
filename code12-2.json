@@ -1,0 +1,49 @@
+[
+    {
+        "id": "btn_on",
+        "type": "ui_button",
+        "z": "flow1",
+        "name": "LED ON",
+        "group": "group1",
+        "order": 1,
+        "label": "LED ON",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 150,
+        "y": 100,
+        "wires": [["mqtt_out"]]
+    },
+    {
+        "id": "btn_off",
+        "type": "ui_button",
+        "z": "flow1",
+        "name": "LED OFF",
+        "group": "group1",
+        "order": 2,
+        "label": "LED OFF",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 150,
+        "y": 160,
+        "wires": [["mqtt_out"]]
+    },
+    {
+        "id": "mqtt_out",
+        "type": "mqtt out",
+        "z": "flow1",
+        "name": "",
+        "topic": "esp32/remote",
+        "broker": "broker1",
+        "x": 400,
+        "y": 130,
+        "wires": []
+    },
+    {
+        "id": "broker1",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "node-red-client"
+    }
+]
