@@ -6,10 +6,10 @@
 **[Department of Manufacturing Engineering and Management, De La Salle University (DLSU)](https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/manufacturing-engineering-management/)**
 
 ## Learning Objectives  
-- Understand how to use MQTT protocol for IoT communication.
-- Configure ESP32 to connect to an external MQTT broker.
-- Build a simple **remote control dashboard** in Node-RED.
-- Control ESP32 devices from anywhere in the world.
+- To understand how to use MQTT protocol for IoT communication
+- To configure ESP32 to connect to an external MQTT broker
+- To build a simple **remote control dashboard** in Node-RED
+- To control ESP32 devices from anywhere in the world
 
 ## Requirements  
 - ESP32 board with MicroPython firmware
@@ -38,11 +38,9 @@
 - Download the latest ESP32 MicroPython firmware.
 
 ### 3. [ESP32 Micropython Code](https://raw.githubusercontent.com/rgbaldov/iot/refs/heads/main/code12-1.py)
-- Add gauge widgets for temperature and humidity
-- Send an alert notification if temperature > 30°C
 
 ### 4. Setup Node-RED Dashboard
-- Open Node-RED editor → http://localhost:1880
+- Open Node-RED and upload this [flow](https://raw.githubusercontent.com/rgbaldov/iot/refs/heads/main/code12-2.json)
 - Install node-red-dashboard from Palette Manager.
 - Drag the following nodes:
   - 2 Dashboard Buttons
@@ -62,7 +60,7 @@
 3. Click LED OFF → ESP32 LED turns OFF.
 4. Verify that commands work outside local WiFi (using mobile data or another network).
 
-## Expected Outcome
+## Expected Outputs
 1. The ESP32 connects to the internet via WiFi.
 2. Node-RED dashboard sends MQTT commands through HiveMQ Cloud.
 3. ESP32 responds to commands in real-time, enabling remote IoT control.
