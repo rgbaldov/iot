@@ -13,7 +13,7 @@
 
 ## Requirements  
 - ESP32 board with MicroPython firmware
-- Micro-USB cable
+- USB cable
 - RPi or computer with:
   - **Thonny IDE** (for MicroPython programming)
   - **Node-RED** installed
