@@ -34,7 +34,7 @@
    - Username & Password (if configured)
   
 ### 2. Flash ESP32 with MicroPython
--You can use Thonny IDE in your PC or RPi.
+- You can use Thonny IDE in your PC or RPi.
 - Download the latest ESP32 MicroPython firmware.
 
 ### 3. [ESP32 Micropython Code](https://raw.githubusercontent.com/rgbaldov/iot/refs/heads/main/code12-1.py)
