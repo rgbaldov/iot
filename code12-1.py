@@ -4,45 +4,42 @@ from umqtt.simple import MQTTClient
 from machine import Pin
 
 # WiFi credentials
-SSID = "YOUR_WIFI_NAME"
-PASSWORD = "YOUR_WIFI_PASS"
+WIFI_SSID = "YOUR_WIFI"
+WIFI_PASS = "YOUR_PASS"
 
-# HiveMQ Cloud MQTT broker credentials
-MQTT_BROKER = "YOUR_CLUSTER.s1.eu.hivemq.cloud"
-MQTT_PORT = 8883  # Use 1883 if broker allows non-SSL
-MQTT_USER = "your-username"
-MQTT_PASS = "your-password"
-TOPIC = "esp32/remote"
+# MQTT Broker (HiveMQ Cloud)
+MQTT_BROKER = "broker.hivemq.com"
+MQTT_PORT = 1883
+MQTT_CLIENT = "esp32-client"
+MQTT_TOPIC = "esp32/remote"
 
 # Connect WiFi
 wifi = network.WLAN(network.STA_IF)
 wifi.active(True)
-wifi.connect(SSID, PASSWORD)
-print("Connecting to WiFi", end="")
+wifi.connect(WIFI_SSID, WIFI_PASS)
 while not wifi.isconnected():
-    print(".", end="")
     time.sleep(1)
-print("\nConnected:", wifi.ifconfig())
+print("✅ WiFi connected:", wifi.ifconfig())
 
-# Setup LED
+# Connect MQTT
+client = MQTTClient(MQTT_CLIENT, MQTT_BROKER, MQTT_PORT)
+client.connect()
+print("✅ Connected to HiveMQ Broker")
+
+# Setup LED (built-in LED on GPIO2)
 led = Pin(2, Pin.OUT)
 
-# MQTT callback
+# Callback for incoming messages
 def sub_cb(topic, msg):
-    print("Received:", msg)
+    print("Message:", msg)
     if msg == b"ON":
         led.value(1)
     elif msg == b"OFF":
         led.value(0)
 
-# MQTT setup
-client = MQTTClient("esp32client", MQTT_BROKER, port=MQTT_PORT,
-                    user=MQTT_USER, password=MQTT_PASS, ssl=False)
 client.set_callback(sub_cb)
-client.connect()
-client.subscribe(TOPIC)
-print("Subscribed to", TOPIC)
+client.subscribe(MQTT_TOPIC)
 
-# Listen loop
+print("📡 Listening for remote commands...")
 while True:
     client.wait_msg()
