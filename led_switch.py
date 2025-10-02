@@ -6,8 +6,8 @@ from machine import Pin
 led = Pin(2, Pin.OUT)
 
 # WiFi setup
-SSID = "Rukas"
-PASSWORD = "ramrampogi"
+SSID = "Renann's Z Flip6"
+PASSWORD = "renannpogi"
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
