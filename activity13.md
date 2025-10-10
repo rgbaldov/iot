@@ -27,19 +27,22 @@ sudo apt update && sudo apt upgrade -y
 ```bash
 sudo apt install -y git build-essential cmake g++ python3 python3-dev \
                    qtbase5-dev libgtk-3-dev libxml2 libxml2-dev
+```
 
 ## 4. Clone and Build NS-3
-
 ```bash
 # Clone NS-3 repository
 git clone https://gitlab.com/nsnam/ns-3-dev.git ns-3
 cd ns-3
+```
 
 # Configure and build
+```bash
 ./ns3 configure --enable-examples --enable-tests
 ./ns3 build
+```
 
 ## 5. Test Installation
-
 ```bash
 ./ns3 run hello-simulator
+```
