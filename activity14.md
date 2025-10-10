@@ -3,8 +3,6 @@
 ## Objective
 To simulate a **simple point-to-point network** using NS-3 and analyze basic network communication between two nodes.
 
----
-
 ## Background
 
 A **point-to-point network** is the simplest type of network — it connects two nodes directly using a dedicated link.  
@@ -15,8 +13,6 @@ In this activity, you will:
 - Set up UDP Echo Client and Server applications
 - Observe packet transmission and latency
 
----
-
 ## Prerequisites
 Before starting:
 1. NS-3 must be installed on your RPi or Linux machine.  
@@ -26,8 +22,6 @@ Before starting:
    ```
    If it prints `Hello Simulator`, you’re ready to go!
 
----
-
 ## 🧠 Network Topology
 
 ```
@@ -36,8 +30,6 @@ Before starting:
 |  (Client)                       | (Server)|
 +--------+                        +--------+
 ```
-
----
 
 ## Step 1: Create and Build the Script
 
@@ -104,8 +96,6 @@ Run the simulation:
 ./ns3 run scratch/point_to_point.py
 ```
 
----
-
 ## Step 2: Analyze Results
 
 ### 1. View Console Output
@@ -122,8 +112,6 @@ wireshark point_to_point-0-0.pcap &
 ```
 You can inspect packet headers, delays, and sequence numbers.
 
----
-
 ## Step 3: Experiment
 
 Try modifying:
@@ -134,20 +122,13 @@ Try modifying:
 
 Observe how these changes affect the total delay and throughput.
 
----
-
 ## Discussion Questions
 
 1. What happens if you increase the link delay from `2ms` to `10ms`?  
 2. How does increasing `PacketSize` affect transmission time?  
 3. Why is the server started before the client in the simulation?
 
----
-
 ## Expected Outcome
-
 - Successful echo reply packets between Node0 and Node1  
 - Generation of `.pcap` trace files  
-- Understanding of basic point-to-point communication and latency factors  
-
----
+- Understanding of basic point-to-point communication and latency factors
