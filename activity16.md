@@ -1,4 +1,4 @@
-# Activity 15: Point-to-Point Network Simulation (NS-3)
+# Activity 16: Point-to-Point Network Simulation (NS-3)
 
 ## Objective
 To simulate a **simple point-to-point network** using NS-3 and analyze basic network communication between two nodes.
