@@ -39,4 +39,4 @@ To measure temperature and humidity using a DHT11 sensor connected to an ESP32, 
 - Topic: _channels/<channelID>/publish_
 
 ## [MicroPython Code](https://raw.githubusercontent.com/rgbaldov/iot/refs/heads/main/activity13.py) (ESP32 + DHT11 + ThingSpeak + Local DB)
-> **Note:** ESP32 doesn’t have native SQLite support, but we can simulate a *local database* by saving readings in a text/CSV file. 
+- **Note:** ESP32 doesn’t have native SQLite support, but we can simulate a *local database* by saving readings in a text/CSV file.
