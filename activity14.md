@@ -42,12 +42,14 @@ This demonstrates how cloud APIs, MQTT, and IoT dashboards can be integrated int
 ## Step 3: [Python Code](https://raw.githubusercontent.com/rgbaldov/iot/refs/heads/main/activity14.py) (with MQTT + ThingSpeak + SQLite + OpenWeatherMap)
 
 ## Step 4: Verify local DB
-1. sqlite3 weather_data.db
-2. sqlite> SELECT * FROM weather_log;
+```bash
+sqlite3 weather_data.db
+sqlite> SELECT * FROM weather_log;
+```
 
 ## Step 5: Verify DB on ThingSpeak
 1. Go to your ThingSpeak channel view.
 2. You should see:
   - Field 1 graph (Temperature)
   - Field 2 graph (Humidity)
-3. The data should update every ~20 seconds.
+3. The data should update every ~20 s.
