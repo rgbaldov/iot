@@ -50,6 +50,6 @@ sqlite> SELECT * FROM weather_log;
 ## Step 5: Verify DB on ThingSpeak
 1. Go to your ThingSpeak channel view.
 2. You should see:
-  - Field 1 graph (Temperature)
-  - Field 2 graph (Humidity)
+   - Field 1 graph (Temperature)
+   - Field 2 graph (Humidity)
 3. The data should update every ~20 s.
