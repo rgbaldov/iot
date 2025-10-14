@@ -1,4 +1,4 @@
-# Activity 13: NS-3 Installation Guide for RPi OS
+# Activity 14: NS-3 Installation Guide for RPi OS
 
 **Prepared by:**  
 
