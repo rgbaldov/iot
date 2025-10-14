@@ -1,4 +1,9 @@
-# Activity 15: IoT Data Logging Using ESP32, DHT11, MQTT, ThingSpeak, and Local Database
+# Activity 13: IoT Data Logging Using ESP32, DHT11, MQTT, ThingSpeak, and Local Database
+
+**Prepared by:**  
+
+[Renann G. Baldovino, PhD](https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/manufacturing-engineering-management/faculty-profile/renann-baldovino/)  
+**[Department of Manufacturing Engineering and Management, De La Salle University (DLSU)](https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/manufacturing-engineering-management/)**
 
 ## Objective
 To measure temperature and humidity using a DHT11 sensor connected to an ESP32, publish the data via MQTT to **ThingSpeak**, and also log the readings to a **local database** for offline storage
