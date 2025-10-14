@@ -37,7 +37,7 @@ This demonstrates how cloud APIs, MQTT, and IoT dashboards can be integrated int
 1. Go to [https://openweathermap.org/api](https://openweathermap.org/api)
 2. Sign up for a free account.
 3. Copy your **API key**.
-4. Find your **City ID** or use the format: api.openweathermap.org/data/2.5/weather?q=Manila,PH&appid=YOUR_API_KEY&units=metric
+4. Find your **City ID** (residence) or use the format: api.openweathermap.org/data/2.5/weather?q=Manila,PH&appid=YOUR_API_KEY&units=metric
 
 ## Step 3: [Python Code](https://raw.githubusercontent.com/rgbaldov/iot/refs/heads/main/activity14.py) (with MQTT + ThingSpeak + SQLite + OpenWeatherMap)
 
